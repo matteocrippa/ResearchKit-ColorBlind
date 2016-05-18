@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="ColorBlind" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Colorblind" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahs-Kz-gtA">
+                                <rect key="frame" x="20" y="50" width="560" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="g0f-Tk-roZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="51"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhg-Ts-Ajd">
+                                <rect key="frame" x="252" y="445" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6yj-cr-hCj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Take the survey"/>
+                                <connections>
+                                    <action selector="startSurvey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cNj-Hj-Q1v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8z-4t-2dx">
+                                <rect key="frame" x="177" y="483" width="247" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="980-3R-eNF"/>
+                                    <constraint firstAttribute="width" constant="247" id="eud-po-Qdu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Learn about color blindness"/>
+                                <connections>
+                                    <segue destination="JmB-th-joc" kind="showDetail" id="yWc-G3-3fO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🕓 Please, take the survey!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="krb-w4-mqN">
+                                <rect key="frame" x="20" y="336" width="560" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-gray" translatesAutoresizingMaskIntoConstraints="NO" id="D0c-4o-Wdq">
+                                <rect key="frame" x="236" y="159" width="128" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ego-Jp-tHK">
+                                <rect key="frame" x="177" y="560" width="247" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="11"/>
+                                <state key="normal" title="credits">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jxH-Jp-CQO" kind="showDetail" id="3GL-rg-UDu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ego-Jp-tHK" firstAttribute="top" secondItem="f8z-4t-2dx" secondAttribute="bottom" constant="72" id="0Ga-Jd-dLs"/>
+                            <constraint firstItem="f8z-4t-2dx" firstAttribute="top" secondItem="mhg-Ts-Ajd" secondAttribute="bottom" constant="8" symbolic="YES" id="2NR-8y-jNj"/>
+                            <constraint firstItem="D0c-4o-Wdq" firstAttribute="centerX" secondItem="krb-w4-mqN" secondAttribute="centerX" id="6Fn-1p-Uw4"/>
+                            <constraint firstItem="Ahs-Kz-gtA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9Ns-Lg-A2n"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ego-Jp-tHK" secondAttribute="bottom" constant="15" id="BW5-wb-WIV"/>
+                            <constraint firstItem="D0c-4o-Wdq" firstAttribute="top" secondItem="Ahs-Kz-gtA" secondAttribute="bottom" constant="65" id="MxS-yc-ydy"/>
+                            <constraint firstItem="f8z-4t-2dx" firstAttribute="leading" secondItem="Ego-Jp-tHK" secondAttribute="leading" id="P2O-4t-WOe"/>
+                            <constraint firstItem="f8z-4t-2dx" firstAttribute="trailing" secondItem="Ego-Jp-tHK" secondAttribute="trailing" id="USJ-bY-dWI"/>
+                            <constraint firstItem="Ahs-Kz-gtA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="WeB-IC-zNR"/>
+                            <constraint firstItem="mhg-Ts-Ajd" firstAttribute="centerX" secondItem="f8z-4t-2dx" secondAttribute="centerX" id="Wxc-I2-Pqd"/>
+                            <constraint firstItem="Ahs-Kz-gtA" firstAttribute="trailing" secondItem="krb-w4-mqN" secondAttribute="trailing" id="aVL-iW-iMu"/>
+                            <constraint firstItem="Ahs-Kz-gtA" firstAttribute="leading" secondItem="krb-w4-mqN" secondAttribute="leading" id="f9V-Dc-dw8"/>
+                            <constraint firstItem="Ahs-Kz-gtA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fZN-wB-cFN"/>
+                            <constraint firstItem="krb-w4-mqN" firstAttribute="top" secondItem="D0c-4o-Wdq" secondAttribute="bottom" constant="49" id="fq5-zR-cfh"/>
+                            <constraint firstItem="mhg-Ts-Ajd" firstAttribute="top" secondItem="krb-w4-mqN" secondAttribute="bottom" constant="88" id="hc9-rr-4jg"/>
+                            <constraint firstItem="krb-w4-mqN" firstAttribute="centerX" secondItem="mhg-Ts-Ajd" secondAttribute="centerX" id="q8w-rC-2TV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0Ga-Jd-dLs"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageLogo" destination="D0c-4o-Wdq" id="lpk-aX-Lmj"/>
+                        <outlet property="labelResponse" destination="krb-w4-mqN" id="H8B-L5-dCo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="415"/>
+        </scene>
+        <!--Discover View Controller-->
+        <scene sceneID="eY4-h9-15c">
+            <objects>
+                <viewController id="JmB-th-joc" customClass="DiscoverViewController" customModule="ColorBlind" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vYu-JW-ZuE"/>
+                        <viewControllerLayoutGuide type="bottom" id="LYw-3e-dc2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3g2-HW-ZxW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IC-JO-Tge">
+                                <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="yYV-8p-fJV"/>
+                                </constraints>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem title="Discover color blindness" id="0Fp-32-ET8">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="KIt-5G-Fzb">
+                                            <connections>
+                                                <action selector="goBack" destination="JmB-th-joc" id="wAk-zM-uco"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsJ-Ng-USI">
+                                <rect key="frame" x="0.0" y="66" width="600" height="534"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Color blindness, or color vision deficiency, is the inability or decreased ability to see color, or perceive color differences, under normal lighting conditions. 
+Color blindness affects a significant percentage of the population.
+There is no actual blindness but there is a deficiency of color vision. 
+
+The most usual cause is a fault in the development of one or more sets of retinal cones that perceive color in light and transmit that information to the optic nerve. 
+
+Color blindness is usually classified as a mild disability. 
+There are occasional circumstances where it is an advantage: some studies conclude that color blind people are better at penetrating certain color camouflages. 
+Such findings may give an evolutionary reason for the high prevalence of red–green color blindness.
+
+
+Source: Wikipedia</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PsJ-Ng-USI" firstAttribute="top" secondItem="6IC-JO-Tge" secondAttribute="bottom" id="5uz-sa-URj"/>
+                            <constraint firstItem="PsJ-Ng-USI" firstAttribute="bottom" secondItem="LYw-3e-dc2" secondAttribute="top" id="V4Q-Rv-eY6"/>
+                            <constraint firstItem="PsJ-Ng-USI" firstAttribute="trailing" secondItem="6IC-JO-Tge" secondAttribute="trailing" id="WBe-fh-qk7"/>
+                            <constraint firstItem="6IC-JO-Tge" firstAttribute="top" secondItem="3g2-HW-ZxW" secondAttribute="top" id="XfZ-jW-HmO"/>
+                            <constraint firstAttribute="trailing" secondItem="6IC-JO-Tge" secondAttribute="trailing" id="Yef-Uv-TVT"/>
+                            <constraint firstItem="6IC-JO-Tge" firstAttribute="top" secondItem="3g2-HW-ZxW" secondAttribute="topMargin" constant="22" id="l2P-zP-xd6"/>
+                            <constraint firstItem="6IC-JO-Tge" firstAttribute="leading" secondItem="3g2-HW-ZxW" secondAttribute="leading" id="oKf-FE-Q4V"/>
+                            <constraint firstItem="PsJ-Ng-USI" firstAttribute="leading" secondItem="6IC-JO-Tge" secondAttribute="leading" id="tRy-Fb-47i"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="XfZ-jW-HmO"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eqZ-P9-22t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981" y="415"/>
+        </scene>
+        <!--Discover View Controller-->
+        <scene sceneID="wcD-Vh-km0">
+            <objects>
+                <viewController id="jxH-Jp-CQO" customClass="DiscoverViewController" customModule="ColorBlind" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hkz-kJ-rHP"/>
+                        <viewControllerLayoutGuide type="bottom" id="kso-no-GZD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kD7-G5-eQ7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHo-1v-PZu">
+                                <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1e6-Wk-wjv"/>
+                                </constraints>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem title="Credits" id="1Jy-ux-qg1">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="Qe4-qQ-gE6">
+                                            <connections>
+                                                <action selector="goBack" destination="jxH-Jp-CQO" id="hV8-hB-tem"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09P-BA-miX">
+                                <rect key="frame" x="0.0" y="66" width="600" height="534"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">ColorBlind iOS application has been built on top of ResearchKit ( http://researchkit.org ) framework by Apple.
+
+It makes use of vis4.net images as color blind pattern images instead of Ishihara ones in order to allow even childrens that are not yeat ready to give the name of a number to participate.
+
+The app will not store or share any of the information calculated, all the information will stay on your device only or if you have iCloud activated on your accout, the information will be stored there for the sole purpose to allow other your devices to stay synched.
+
+
+
+
+ColorBlind makes use of those third party libraries:
+
+- Morgan ( https://github.com/RamonGilabert/Morgan )
+- ResearchKit ( https://github.com/ResearchKit/ResearchKit )</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="09P-BA-miX" firstAttribute="leading" secondItem="cHo-1v-PZu" secondAttribute="leading" id="52f-vc-kTZ"/>
+                            <constraint firstItem="09P-BA-miX" firstAttribute="bottom" secondItem="kso-no-GZD" secondAttribute="top" id="5N0-zf-CDO"/>
+                            <constraint firstAttribute="trailing" secondItem="cHo-1v-PZu" secondAttribute="trailing" id="9XY-nE-c5g"/>
+                            <constraint firstItem="cHo-1v-PZu" firstAttribute="top" secondItem="kD7-G5-eQ7" secondAttribute="topMargin" constant="22" id="H7L-IQ-dl5"/>
+                            <constraint firstItem="09P-BA-miX" firstAttribute="top" secondItem="cHo-1v-PZu" secondAttribute="bottom" id="Je6-3F-ted"/>
+                            <constraint firstItem="cHo-1v-PZu" firstAttribute="leading" secondItem="kD7-G5-eQ7" secondAttribute="leading" id="Llp-hP-MYH"/>
+                            <constraint firstItem="09P-BA-miX" firstAttribute="trailing" secondItem="cHo-1v-PZu" secondAttribute="trailing" id="M8q-K3-iks"/>
+                            <constraint firstItem="cHo-1v-PZu" firstAttribute="top" secondItem="kD7-G5-eQ7" secondAttribute="top" id="w9q-3b-hvL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="w9q-3b-hvL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fiw-La-Pjq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981" y="1075"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo-gray" width="128" height="128"/>
+    </resources>
+</document>

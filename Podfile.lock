@@ -1,0 +1,28 @@
+PODS:
+  - Crashlytics (3.7.0):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.7)
+  - Log (0.5)
+  - Nimble (4.0.1)
+  - Quick (0.9.2)
+  - Walker (0.9.1)
+
+DEPENDENCIES:
+  - Crashlytics
+  - Fabric
+  - Log
+  - Nimble
+  - Quick
+  - Walker
+
+SPEC CHECKSUMS:
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  Log: 5972312cb85cffbc56407b612936b610eb4af8a5
+  Nimble: 0f3c8b8b084cda391209c3c5efbb48bedeeb920a
+  Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
+  Walker: 9a765e7f35adb19ce59079e26d425c1e8c463241
+
+PODFILE CHECKSUM: c84dc511f956dd59b50e65d5c53379f58b2ae15b
+
+COCOAPODS: 1.0.0
